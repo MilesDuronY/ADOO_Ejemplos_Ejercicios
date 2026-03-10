@@ -1,0 +1,11 @@
+class CalculadoraDescuentos:
+    def calcular(self, monto: float, tipo_cliente: str) -> float:
+        if tipo_cliente == "Estudiante":
+            return monto * 0.8
+        elif tipo_cliente == "Premium":
+            return monto * 0.7
+        return monto
+
+# Uso actual
+calculadora = CalculadoraDescuentos()
+print(calculadora.calcular(200, "Estudiante"))
